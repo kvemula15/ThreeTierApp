@@ -93,9 +93,7 @@ public class AppController {
 		if (result.hasErrors()) {
 			return "registration";
 		}
-		List<Employee> employeeList = service.findEmployeeBySsn(employee
-				.getSsn());
-		employee.setId(employeeList.get(0).getId());
+
 		service.updateEmployee(employee);
 
 		model.addAttribute("success", "Employee " + employee.getName()

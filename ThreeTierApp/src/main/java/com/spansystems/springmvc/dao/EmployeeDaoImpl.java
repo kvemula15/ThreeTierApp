@@ -38,7 +38,7 @@ public class EmployeeDaoImpl extends AbstractDao implements EmployeeDao {
 	}
 
 	public void updateEmployee(Employee employee) {
-		getSession().update(employee);
+		getSession().saveOrUpdate(employee);
 	}
 
 }
