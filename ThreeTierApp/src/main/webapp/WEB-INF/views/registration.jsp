@@ -47,6 +47,12 @@
 				<td><form:input path="ssn" id="ssn"/></td>
 				<td><form:errors path="ssn" cssClass="error"/></td>
 		    </tr>
+		    
+		    	<tr>
+				<td></td>
+				<td><form:hidden path="id" id="id"/></td>
+				<td></td>
+		    </tr>
 	
 			<tr>
 				<td colspan="3"><input type="submit" value="Register"/></td>
